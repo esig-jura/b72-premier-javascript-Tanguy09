@@ -1,5 +1,18 @@
 "use strict";
 
+// Récupérer le prénom du visiteur et le converti en nombre
+const celcius = Number (prompt("Température en Celcius"));
+// Si celcius n'est pas un nombre => affiche une erreur
+if(isNaN(celcius)) {
+    alert("Entrez un nombre !");
+}
+else {
+    const fahrenheit = celcius*9/5+32;
+    alert(`${celcius}°C => ${fahrenheit}°F`);
+}
+
+
+
 // alert("Bonjour le monde !");
 let nom = "Steve";
 console.log(nom);
